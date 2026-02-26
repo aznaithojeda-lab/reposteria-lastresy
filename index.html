@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mil Detalles · LasTresY — Repostería Artesanal Colombia</title>
+  <meta name="description" content="Repostería artesanal para momentos especiales. Tortas únicas, cupcakes, macarons y detalles que enamoran. Pedidos WhatsApp +57 316 538 9152"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ▓▓▓▓▓▓ LOADER ▓▓▓▓▓▓ -->
+<div id="loader" class="loader">
+  <div class="loader-content">
+    <div class="loader-emoji">🎂</div>
+    <p class="loader-name">Mil Detalles</p>
+    <p class="loader-sub">LasTresY</p>
+    <div class="loader-bar-bg"><div class="loader-bar-fill" id="loaderFill"></div></div>
+    <p class="loader-hint">Preparando algo delicioso…</p>
+  </div>
+</div>
+
+<!-- ▓▓▓▓▓▓ HEADER ▓▓▓▓▓▓ -->
+<header class="header" id="header" role="banner">
+  <div class="header-inner">
+    <a href="#inicio" class="logo" aria-label="Ir al inicio">
+      <div class="logo-circle">🍰</div>
+      <div class="logo-text">
+        <span class="logo-main">Mil Detalles</span>
+        <span class="logo-sub">LasTresY</span>
+      </div>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegación principal">
+      <a href="#inicio"   class="nav-link">Inicio</a>
+      <a href="#catalogo" class="nav-link">Catálogo</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#galeria"  class="nav-link">Galería</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://wa.me/573165389152" class="header-wa-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escríbenos
+      </a>
+      <button class="cart-icon-btn" id="cartBtn" aria-label="Abrir carrito">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-badge" id="cartBadge" aria-live="polite">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Menú móvil" aria-hidden="true">
+    <a href="#inicio"   class="nm-link">🏠 Inicio</a>
+    <a href="#catalogo" class="nm-link">🛍 Catálogo</a>
+    <a href="#nosotros" class="nm-link">💛 Nosotros</a>
+    <a href="#galeria"  class="nm-link">📸 Galería</a>
+    <a href="#contacto" class="nm-link">📞 Contacto</a>
+    <a href="https://wa.me/573165389152" class="nm-link nm-wa" target="_blank" rel="noopener">💬 WhatsApp directo</a>
+  </nav>
+</header>
+
+<!-- ▓▓▓▓▓▓ MAIN ▓▓▓▓▓▓ -->
+<main id="main">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="inicio" aria-label="Portada">
+    <div class="hero-bg-blobs" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-chip">✨ Repostería artesanal colombiana desde 2018</div>
+        <h1 class="hero-h1">
+          Endulzamos<br/>
+          <em class="hero-em">cada momento</em><br/>
+          especial.
+        </h1>
+        <p class="hero-p">Tortas únicas, cupcakes irresistibles y detalles que enamoran. Cada pieza creada con amor para hacer tu celebración inolvidable.</p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn-pink">🛍 Ver catálogo</a>
+          <a href="https://wa.me/573165389152" class="btn-outline-w" target="_blank" rel="noopener">💬 Pedir ahora</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-imgs" aria-hidden="true">
+            <img src="https://i.pravatar.cc/36?img=1" alt=""/>
+            <img src="https://i.pravatar.cc/36?img=5" alt=""/>
+            <img src="https://i.pravatar.cc/36?img=9" alt=""/>
+            <img src="https://i.pravatar.cc/36?img=14" alt=""/>
+          </div>
+          <div class="proof-words">
+            <div class="proof-stars" aria-label="5 estrellas">★★★★★</div>
+            <p>+2.400 clientes felices en toda Colombia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-mosaic">
+          <div class="hm-big">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=85" alt="Torta floral artesanal" loading="eager"/>
+            <div class="hm-label">🎂 Tortas especiales</div>
+          </div>
+          <div class="hm-small-col">
+            <div class="hm-sm">
+              <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&q=80" alt="Cupcakes coloridos" loading="eager"/>
+            </div>
+            <div class="hm-sm">
+              <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&q=80" alt="Macarons pastel" loading="eager"/>
+            </div>
+          </div>
+          <div class="hm-wide">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=700&q=80" alt="Torta de bodas" loading="lazy"/>
+          </div>
+        </div>
+        <div class="hero-float-1">
+          <div class="hf-icon">⏰</div>
+          <div class="hf-text"><strong>Pedidos con anticipación</strong><span>Mínimo 48 horas</span></div>
+        </div>
+        <div class="hero-float-2">🚀 <strong>Domicilio</strong> disponible</div>
+      </div>
+    </div>
+    <div class="hero-wave-bottom" aria-hidden="true">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="#fff5f9"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══ RIBBON ═══ -->
+  <section class="ribbon-sec" aria-hidden="true">
+    <div class="ribbon-track">
+      <div class="ribbon-roll" id="ribbonRoll">
+        <span>🎂 Tortas de cumpleaños</span><span class="rdot">✦</span>
+        <span>🧁 Cupcakes artesanales</span><span class="rdot">✦</span>
+        <span>🍰 Cheesecakes gourmet</span><span class="rdot">✦</span>
+        <span>🌸 Flores en azúcar</span><span class="rdot">✦</span>
+        <span>🎁 Cajas sorpresa</span><span class="rdot">✦</span>
+        <span>💍 Tortas de boda</span><span class="rdot">✦</span>
+        <span>🍫 Paletas de chocolate</span><span class="rdot">✦</span>
+        <span>🥐 Desayunos románticos</span><span class="rdot">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CATEGORÍAS ═══ -->
+  <section class="categorias-sec" id="categorias" aria-labelledby="cat-h2">
+    <div class="container">
+      <div class="sec-head">
+        <p class="eyebrow">Lo que creamos</p>
+        <h2 id="cat-h2" class="sec-title">Nuestras <em>especialidades</em></h2>
+      </div>
+      <div class="cat-cards">
+        <article class="cat-card" style="--c:#FF6B9D;--clt:#ffe0ec">
+          <div class="cc-img"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Repostería artesanal" loading="lazy"/></div>
+          <div class="cc-body">
+            <span class="cc-ico">🎂</span>
+            <h3>Repostería</h3>
+            <p>Tortas, cupcakes, cheesecakes y más elaborados con ingredientes frescos de primera calidad.</p>
+            <a href="#catalogo" class="cc-link">Ver más →</a>
+          </div>
+        </article>
+        <article class="cat-card" style="--c:#FFB347;--clt:#fff3e0">
+          <div class="cc-img"><img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=500&q=80" alt="Decoraciones en azúcar" loading="lazy"/></div>
+          <div class="cc-body">
+            <span class="cc-ico">🌸</span>
+            <h3>Decoraciones</h3>
+            <p>Flores en azúcar, toppers personalizados, drips y coberturas que sorprenden a todos.</p>
+            <a href="#catalogo" class="cc-link">Ver más →</a>
+          </div>
+        </article>
+        <article class="cat-card" style="--c:#7EC8E3;--clt:#e0f5fc">
+          <div class="cc-img"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&q=80" alt="Cajas regalo y detalles" loading="lazy"/></div>
+          <div class="cc-body">
+            <span class="cc-ico">🎁</span>
+            <h3>Detalles</h3>
+            <p>Cajas regalo, paletas de chocolate, desayunos sorpresa y surtidos especiales para regalar.</p>
+            <a href="#catalogo" class="cc-link">Ver más →</a>
+          </div>
+        </article>
+        <article class="cat-card" style="--c:#B5EAD7;--clt:#e0faf0">
+          <div class="cc-img"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500&q=80" alt="Accesorios de fiesta" loading="lazy"/></div>
+          <div class="cc-body">
+            <span class="cc-ico">🎊</span>
+            <h3>Accesorios</h3>
+            <p>Velas metálicas, kits de decoración, globos y todo lo que necesitas para tu fiesta perfecta.</p>
+            <a href="#catalogo" class="cc-link">Ver más →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CATÁLOGO ═══ -->
+  <section class="catalogo-sec" id="catalogo" aria-labelledby="catsec-h2">
+    <div class="container">
+      <div class="sec-head centered">
+        <p class="eyebrow">Hecho con amor</p>
+        <h2 id="catsec-h2" class="sec-title">Nuestro <em>catálogo</em></h2>
+        <p class="sec-sub">Cada producto elaborado artesanalmente. ¡Personaliza según tu gusto!</p>
+      </div>
+      <div class="filters-row" role="group" aria-label="Filtrar productos por categoría">
+        <button class="fpill active" data-cat="all">Todos</button>
+        <button class="fpill" data-cat="reposteria">🎂 Repostería</button>
+        <button class="fpill" data-cat="decoraciones">🌸 Decoraciones</button>
+        <button class="fpill" data-cat="detalles">🎁 Detalles</button>
+        <button class="fpill" data-cat="accesorios">🎊 Accesorios</button>
+      </div>
+      <div class="prod-grid" id="prodGrid" aria-live="polite" aria-label="Lista de productos"></div>
+    </div>
+  </section>
+
+  <!-- ═══ NOSOTROS ═══ -->
+  <section class="nosotros-sec" id="nosotros" aria-labelledby="nos-h2">
+    <div class="nos-container">
+      <div class="nos-imgs" aria-hidden="true">
+        <div class="nos-main-img">
+          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=85" alt="Repostera trabajando con ingredientes" loading="lazy"/>
+        </div>
+        <div class="nos-sec-img">
+          <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=400&q=80" alt="Decoración en azúcar hecha a mano" loading="lazy"/>
+        </div>
+        <div class="nos-badge">
+          <strong>+6</strong>
+          <span>años de<br/>experiencia</span>
+        </div>
+      </div>
+
+      <div class="nos-text">
+        <p class="eyebrow pink">— Nuestra historia</p>
+        <h2 id="nos-h2" class="sec-title">Pasión por cada <em>detalle.</em></h2>
+        <p class="nos-p">Somos <strong>Mil Detalles LasTresY</strong>, un emprendimiento familiar colombiano nacido en 2018 con un sueño: que cada celebración tenga un sabor que no se olvide. Desde la primera cucharada de masa hasta el último toque de decoración, ponemos el corazón en cada creación.</p>
+        <p class="nos-p">Trabajamos con ingredientes frescos y locales, sin conservantes artificiales, porque creemos que lo artesanal tiene un valor que va más allá de la estética.</p>
+
+        <div class="nos-feats">
+          <div class="nos-feat">
+            <div class="nf-ico" style="background:linear-gradient(135deg,#FF6B9D,#FF8E53)">🌿</div>
+            <div><strong>Ingredientes naturales</strong><p>Frescos, sin conservantes</p></div>
+          </div>
+          <div class="nos-feat">
+            <div class="nf-ico" style="background:linear-gradient(135deg,#667eea,#764ba2)">✏️</div>
+            <div><strong>100% personalizable</strong><p>Adaptamos tu visión</p></div>
+          </div>
+          <div class="nos-feat">
+            <div class="nf-ico" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">🚀</div>
+            <div><strong>Envío a domicilio</strong><p>Llegamos donde estás</p></div>
+          </div>
+          <div class="nos-feat">
+            <div class="nf-ico" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">⭐</div>
+            <div><strong>Calidad garantizada</strong><p>+2.400 clientes felices</p></div>
+          </div>
+        </div>
+        <a href="#contacto" class="btn-pink" style="margin-top:2rem;display:inline-block">Hacer un encargo especial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALERÍA ═══ -->
+  <section class="galeria-sec" id="galeria" aria-labelledby="gal-h2">
+    <div class="container">
+      <div class="sec-head centered">
+        <p class="eyebrow">Nuestro trabajo</p>
+        <h2 id="gal-h2" class="sec-title">Galería de <em>creaciones</em></h2>
+      </div>
+      <div class="gal-grid" aria-label="Galería de productos artesanales">
+        <figure class="gi gi-tall gi-wide">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=85" alt="Torta floral con rosas en azúcar" loading="lazy"/>
+          <figcaption>Tortas florales</figcaption>
+        </figure>
+        <figure class="gi">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&q=80" alt="Cupcakes coloridos de vainilla y chocolate" loading="lazy"/>
+          <figcaption>Cupcakes ×12</figcaption>
+        </figure>
+        <figure class="gi">
+          <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=500&q=80" alt="Macarons franceses de distintos sabores" loading="lazy"/>
+          <figcaption>Macarons</figcaption>
+        </figure>
+        <figure class="gi">
+          <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&q=80" alt="Macarons pastel sobre superficie blanca" loading="lazy"/>
+          <figcaption>Macarons pastel</figcaption>
+        </figure>
+        <figure class="gi">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&q=80" alt="Surtido de postres artesanales" loading="lazy"/>
+          <figcaption>Surtidos</figcaption>
+        </figure>
+        <figure class="gi gi-wide">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=85" alt="Torta de matrimonio con rosas blancas" loading="lazy"/>
+          <figcaption>Tortas de boda</figcaption>
+        </figure>
+        <figure class="gi">
+          <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=500&q=80" alt="Donas glaseadas artesanales" loading="lazy"/>
+          <figcaption>Donas</figcaption>
+        </figure>
+        <figure class="gi">
+          <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80" alt="Galletas decoradas para eventos" loading="lazy"/>
+          <figcaption>Galletas decoradas</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIOS ═══ -->
+  <section class="test-sec" aria-labelledby="test-h2">
+    <div class="container">
+      <div class="sec-head centered">
+        <p class="eyebrow" style="color:#FFD700">Opiniones reales</p>
+        <h2 id="test-h2" class="sec-title white">Lo que dicen nuestros <em>clientes</em></h2>
+      </div>
+      <div class="test-cards">
+        <article class="tc">
+          <div class="tc-top">
+            <div class="tc-av" style="background:linear-gradient(135deg,#FF6B9D,#FF8E53)">MC</div>
+            <div><strong>María Camila R.</strong><span>Bucaramanga 📍</span></div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <blockquote>"La torta de mi boda fue absolutamente perfecta. Todos mis invitados preguntaban quién la había hecho. ¡Un trabajo excepcional y un sabor delicioso!"</blockquote>
+        </article>
+        <article class="tc tc-highlight">
+          <div class="tc-ribbon">⭐ Más popular</div>
+          <div class="tc-top">
+            <div class="tc-av" style="background:linear-gradient(135deg,#667eea,#764ba2)">JP</div>
+            <div><strong>Juan Pablo V.</strong><span>Cúcuta 📍</span></div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <blockquote>"Los cupcakes para el cumpleaños de mi hija estaban increíblemente decorados. El servicio fue puntual y el empaque hermoso. ¡100% recomendadas!"</blockquote>
+        </article>
+        <article class="tc">
+          <div class="tc-top">
+            <div class="tc-av" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">AL</div>
+            <div><strong>Ana Lucía M.</strong><span>Bogotá 📍</span></div>
+          </div>
+          <div class="tc-stars">★★★★★</div>
+          <blockquote>"Las cajas sorpresa son el regalo perfecto. Creativas, bien presentadas y riquísimas. Ya hice tres pedidos y siempre superan mis expectativas."</blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACTO / PEDIDO ═══ -->
+  <section class="contacto-sec" id="contacto" aria-labelledby="cont-h2">
+    <div class="cont-inner">
+      <div class="cont-left">
+        <p class="eyebrow pink">— Háblanos</p>
+        <h2 id="cont-h2" class="sec-title">¿Tienes algo <em>especial</em> en mente?</h2>
+        <p class="cont-p">Cuéntanos tu idea y la hacemos realidad. Personalizado, con sabor y presentación únicos para tu ocasión.</p>
+        <ul class="cont-datos">
+          <li>
+            <span class="cd-ico" style="background:linear-gradient(135deg,#25D366,#128C7E)">💬</span>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/573165389152" target="_blank" rel="noopener">+57 316 538 9152</a></div>
+          </li>
+          <li>
+            <span class="cd-ico" style="background:linear-gradient(135deg,#FF6B9D,#FF8E53)">🕐</span>
+            <div><strong>Horario de atención</strong><p>Lun–Vie: 8am–7pm · Sáb: 9am–5pm · Dom: 10am–2pm</p></div>
+          </li>
+          <li>
+            <span class="cd-ico" style="background:linear-gradient(135deg,#667eea,#764ba2)">📦</span>
+            <div><strong>Anticipación mínima</strong><p>48 horas para pedidos estándar</p></div>
+          </li>
+          <li>
+            <span class="cd-ico" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">🇨🇴</span>
+            <div><strong>Cobertura</strong><p>Envíos a todo Colombia</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cont-right">
+        <div class="form-card">
+          <div class="form-card-header">
+            <h3>📋 Formulario de pedido</h3>
+            <p>Te contactaremos en menos de 2 horas</p>
+          </div>
+          <form id="pedidoForm" novalidate>
+            <div class="fg">
+              <label for="fNombre">Nombre completo *</label>
+              <input type="text" id="fNombre" placeholder="Tu nombre completo" required autocomplete="name"/>
+            </div>
+            <div class="fg">
+              <label for="fDireccion">Dirección de entrega *</label>
+              <input type="text" id="fDireccion" placeholder="Calle / Carrera / Manzana y número" required autocomplete="street-address"/>
+            </div>
+            <div class="fg-2">
+              <div class="fg">
+                <label for="fDepartamento">Departamento *</label>
+                <select id="fDepartamento" required>
+                  <option value="">Selecciona…</option>
+                  <option>Bogotá D.C.</option><option>Antioquia</option>
+                  <option>Valle del Cauca</option><option>Atlántico</option>
+                  <option>Bolívar</option><option>Cundinamarca</option>
+                  <option>Santander</option><option>Norte de Santander</option>
+                  <option>Nariño</option><option>Córdoba</option>
+                  <option>Tolima</option><option>Huila</option>
+                  <option>Meta</option><option>Cesar</option><option>Otro</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label for="fCiudad">Ciudad *</label>
+                <input type="text" id="fCiudad" placeholder="Tu ciudad" required autocomplete="address-level2"/>
+              </div>
+            </div>
+            <div class="fg">
+              <label for="fTelefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="fTelefono" placeholder="+57 300 000 0000" required autocomplete="tel"/>
+            </div>
+            <div class="fg">
+              <label for="fMensaje">Describe tu pedido</label>
+              <textarea id="fMensaje" placeholder="Tipo de torta, sabores, fecha de entrega, cantidad de personas, tema…" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-wa-submit">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Enviar pedido por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ADMIN ═══ -->
+  <section class="admin-sec" id="admin" aria-labelledby="adm-h2">
+    <div class="container">
+      <div class="admin-box">
+        <!-- LOGIN -->
+        <div id="adminLogin">
+          <div class="adm-ico">⚙️</div>
+          <p class="eyebrow" style="color:#667eea;text-align:center">— Acceso restringido</p>
+          <h2 id="adm-h2" style="text-align:center;margin-bottom:1.5rem">Panel Admin</h2>
+          <form id="loginForm" novalidate>
+            <div class="fg"><label for="aUser">Usuario</label><input type="text" id="aUser" placeholder="admin" autocomplete="username"/></div>
+            <div class="fg"><label for="aPass">Contraseña</label><input type="password" id="aPass" placeholder="••••••••" autocomplete="current-password"/></div>
+            <p class="login-err" id="loginErr" role="alert"></p>
+            <button type="submit" class="btn-pink full">Ingresar al panel</button>
+          </form>
+        </div>
+
+        <!-- PANEL -->
+        <div id="adminPanel" style="display:none">
+          <div class="ap-top">
+            <h2>➕ Agregar producto al catálogo</h2>
+            <button id="logoutBtn" class="btn-logout">Cerrar sesión →</button>
+          </div>
+          <form id="addProdForm" novalidate>
+            <div class="fg-2">
+              <div class="fg"><label for="pNom">Nombre *</label><input type="text" id="pNom" placeholder="Ej: Torta Red Velvet" required/></div>
+              <div class="fg"><label for="pPre">Precio COP *</label><input type="number" id="pPre" placeholder="85000" min="0" required/></div>
+            </div>
+            <div class="fg-2">
+              <div class="fg">
+                <label for="pCat">Categoría *</label>
+                <select id="pCat" required>
+                  <option value="">Selecciona…</option>
+                  <option value="reposteria">🎂 Repostería</option>
+                  <option value="decoraciones">🌸 Decoraciones</option>
+                  <option value="detalles">🎁 Detalles</option>
+                  <option value="accesorios">🎊 Accesorios</option>
+                </select>
+              </div>
+              <div class="fg"><label for="pEmo">Emoji</label><input type="text" id="pEmo" placeholder="🎂" maxlength="4"/></div>
+            </div>
+            <div class="fg"><label for="pDes">Descripción *</label><textarea id="pDes" placeholder="Describe el producto…" rows="3" required></textarea></div>
+            <div class="fg"><label for="pImg">URL de imagen (Unsplash u otra)</label><input type="url" id="pImg" placeholder="https://images.unsplash.com/…"/></div>
+            <button type="submit" class="btn-pink full">✅ Agregar al catálogo</button>
+          </form>
+          <div id="apList" class="ap-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main><!-- /main -->
+
+<!-- ▓▓▓▓▓▓ FOOTER ▓▓▓▓▓▓ -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="footer-wave-top" aria-hidden="true">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C480,60 960,0 1440,30 L1440,0 L0,0 Z" fill="white"/></svg>
+  </div>
+  <div class="footer-body">
+    <div class="fc fc-brand">
+      <div class="f-logo">
+        <span>🍰</span>
+        <div><p class="fl-main">Mil Detalles</p><p class="fl-sub">LasTresY</p></div>
+      </div>
+      <p class="f-desc">Repostería artesanal colombiana desde 2018. Cada pedido, una obra de arte hecha con amor y los mejores ingredientes.</p>
+      <a href="https://wa.me/573165389152" class="f-wa-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +57 316 538 9152
+      </a>
+    </div>
+
+    <div class="fc">
+      <h5>Navegación</h5>
+      <nav aria-label="Navegación del footer">
+        <a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a><a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+
+    <div class="fc">
+      <h5>Horarios 🕐</h5>
+      <div class="f-horario"><span>Lunes – Viernes</span><strong>8:00am – 7:00pm</strong></div>
+      <div class="f-horario"><span>Sábados</span><strong>9:00am – 5:00pm</strong></div>
+      <div class="f-horario"><span>Domingos</span><strong>10:00am – 2:00pm</strong></div>
+    </div>
+
+    <div class="fc">
+      <h5>Pedidos</h5>
+      <p>⏳ Mínimo <strong>48 horas</strong> de anticipación</p>
+      <p>🇨🇴 Envíos a <strong>todo Colombia</strong></p>
+      <p>📩 Pagos: <strong>Nequi / Daviplata</strong></p>
+      <a href="#admin" class="f-admin-link">⚙️ Acceso admin</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Mil Detalles LasTresY · Hecho con 🤍 en Colombia · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<!-- ▓▓▓▓▓▓ CARRITO SIDEBAR ▓▓▓▓▓▓ -->
+<div class="cart-ovl" id="cartOvl" aria-hidden="true"></div>
+<aside class="cart-aside" id="cartAside" role="complementary" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="ca-head">
+    <h2>🛍 Tu pedido</h2>
+    <button class="ca-close" id="caClose" aria-label="Cerrar carrito">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div class="ca-items" id="caItems" aria-live="polite">
+    <div class="ca-empty" id="caEmpty">
+      <span>🛒</span>
+      <p>Tu carrito está vacío</p>
+      <small>Agrega productos del catálogo</small>
+    </div>
+  </div>
+
+  <div class="ca-form" id="caForm" style="display:none">
+    <h4>📋 Datos de entrega</h4>
+    <form id="cartFormEl" novalidate>
+      <input type="text" id="cfNom"  placeholder="Nombre completo *" required/>
+      <input type="text" id="cfDir"  placeholder="Dirección *" required/>
+      <div class="cf2">
+        <select id="cfDep" required>
+          <option value="">Departamento *</option>
+          <option>Bogotá D.C.</option><option>Antioquia</option>
+          <option>Valle del Cauca</option><option>Atlántico</option>
+          <option>Bolívar</option><option>Cundinamarca</option>
+          <option>Santander</option><option>Norte de Santander</option>
+          <option>Nariño</option><option>Córdoba</option><option>Otro</option>
+        </select>
+        <input type="text" id="cfCiu" placeholder="Ciudad *" required/>
+      </div>
+      <input type="tel" id="cfTel" placeholder="Teléfono / WhatsApp *" required/>
+    </form>
+  </div>
+
+  <div class="ca-foot" id="caFoot" style="display:none">
+    <div class="ca-totals">
+      <div class="ca-row"><span>Subtotal</span><span id="caSubtotal">$0</span></div>
+      <div class="ca-row"><span>Envío</span><span class="envio-txt">A convenir 📦</span></div>
+      <div class="ca-row ca-total-row"><strong>Total</strong><strong id="caTotal">$0</strong></div>
+    </div>
+    <!-- ✅ VERIFICACIÓN: window.open + https://wa.me/573165389152 + variables del carrito -->
+    <button class="btn-wa-carrito" id="btnFinalizar">
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Finalizar pedido por WhatsApp
+    </button>
+  </div>
+</aside>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/573165389152" class="wa-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>¡Escríbenos!</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
