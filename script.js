@@ -281,8 +281,14 @@ function renderProductos(cat) {
       </div>
     `;
 
-    /* Evento: agregar al carrito */
-    card.querySelector('.btn-agregar').addEventListener('click', function () {
+    /* Click en la tarjeta → abre modal con detalle */
+    card.addEventListener('click', (e) => {
+      if (!e.target.closest('.btn-agregar')) abrirModal(p);
+    });
+
+    /* Botón "+ Agregar" → agrega directo sin abrir modal */
+    card.querySelector('.btn-agregar').addEventListener('click', function (e) {
+      e.stopPropagation(); // evita que el click llegue a la tarjeta
       agregarAlCarrito({
         id:    Number(this.dataset.id),
         name:  this.dataset.name,
@@ -689,37 +695,66 @@ function toast(msg) {
   clearTimeout(_toastTimer);
   _toastTimer = setTimeout(() => t.classList.remove('show'), 3500);
 }
-/* --- FUNCIÓN PARA AMPLIAR IMÁGENES --- */
-document.addEventListener('click', function(e) {
-  // Si lo que tocamos es una imagen dentro del catálogo
-  if (e.target.closest('.cat-card img')) {
-    const imgSrc = e.target.src;
-    const imgName = e.target.alt;
-    
-    // Creamos el modal (el cuadro negro)
-    const modal = document.createElement('div');
-    modal.style.cssText = `
-      position: fixed; top:0; left:0; width:100%; height:100%;
-      background: rgba(0,0,0,0.9); z-index: 9999; display: flex;
-      flex-direction: column; align-items: center; justify-content: center;
-      cursor: zoom-out; animation: fadeIn 0.3s ease;
-    `;
-    
-    // Metemos la imagen y el texto
-    modal.innerHTML = `
-      <img src="${imgSrc}" style="max-width: 90%; max-height: 80vh; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
-      <p style="color: white; margin-top: 15px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">${imgName}</p>
-      <span style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer;">&times;</span>
-    `;
 
-    // Al hacer clic en cualquier parte del cuadro negro, se cierra
-    modal.onclick = () => modal.remove();
-    
-    document.body.appendChild(modal);
+/* ──────────────────────────────────────────────
+   MODAL — Ver detalle del producto
+─────────────────────────────────────────────── */
+let modalProducto = null;
+
+/** Abre el modal con los datos del producto p */
+function abrirModal(p) {
+  modalProducto = p;
+  const ovl = document.getElementById('modalOvl');
+  const img = document.getElementById('modalImg');
+  const emj = document.getElementById('modalEmoji');
+
+  // Rellena los textos del modal
+  document.getElementById('modalCat').textContent    = catLabel(p.cat);
+  document.getElementById('modalNombre').textContent = p.name;
+  document.getElementById('modalDesc').textContent   = p.desc;
+  document.getElementById('modalPrecio').textContent = cop(p.price);
+
+  // Muestra imagen real o emoji como fallback
+  if (p.img) {
+    img.src = p.img;
+    img.alt = p.name;
+    img.style.display = 'block';
+    emj.style.display = 'none';
+  } else {
+    img.style.display = 'none';
+    emj.style.display = 'block';
+    emj.textContent   = p.emoji;
   }
+
+  ovl?.classList.add('open');
+  ovl?.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+/** Cierra el modal */
+function cerrarModal() {
+  document.getElementById('modalOvl')?.classList.remove('open');
+  document.getElementById('modalOvl')?.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  modalProducto = null;
+}
+
+// Botón X del modal
+document.getElementById('modalClose')?.addEventListener('click', cerrarModal);
+
+// Clic en el fondo oscuro del modal
+document.getElementById('modalOvl')?.addEventListener('click', (e) => {
+  if (e.target.id === 'modalOvl') cerrarModal();
 });
 
-// Animación suave
-const styleAnim = document.createElement('style');
-styleAnim.innerHTML = `@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }`;
-document.head.appendChild(styleAnim);
+// Botón "Agregar al carrito" dentro del modal
+document.getElementById('modalAgregar')?.addEventListener('click', () => {
+  if (!modalProducto) return;
+  agregarAlCarrito(modalProducto);
+  cerrarModal();
+});
+
+// Tecla Escape cierra el modal
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') cerrarModal();
+});
